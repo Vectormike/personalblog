@@ -13,6 +13,7 @@ const IndexPage = () => (
       <ul>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact me</Link></li>
+        <li><Link to="/blog">Blog</Link></li>
       </ul>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
