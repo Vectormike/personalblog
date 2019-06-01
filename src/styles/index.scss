@@ -7,7 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(233, 115, 61);
+  background: rgb(245, 242, 241);
 }
 article,
 aside,
@@ -42,6 +42,8 @@ template {
 }
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: rgb(5, 149, 251);
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -200,7 +202,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: hsla(13, 23%, 8%, 0.925);
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
