@@ -1,9 +1,9 @@
 import React from "react"
 
-const Footer = () => {
+const Footer = ({siteAuthor}) => {
   return (
     <div>
-      <p>Created by Victor Jonah, © {new Date().getFullYear()}</p>
+      <p>Created by {siteAuthor}, © {new Date().getFullYear()}</p>
     </div>
   )
 }

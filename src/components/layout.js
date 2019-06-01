@@ -7,35 +7,43 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
 // import "../styles/index.scss"
 import LayoutStyles from '../styles/layout.module.scss';
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+const Layout = ({ children }) => {
+  const title = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
         }
       }
-    `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+    }
+  `);
+
+  const author = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          author
+        }
+      }
+    }
+  `);
+      <div>
+        <Header siteTitle={title.site.siteMetadata.title} />
         <div className={LayoutStyles.container}>
           <main>{children}</main>
-          <Footer />
+          <Footer siteAuthor={author.site.siteMetadata.author}/>
         </div>
-      </>
-    )}
-  />
-)
+      </div>
+    
+
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
