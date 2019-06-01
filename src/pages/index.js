@@ -11,9 +11,15 @@ const IndexPage = () => (
     <div>
       <h1>Welcome to my Blog</h1>
       <ul>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact me</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact me</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
       </ul>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
