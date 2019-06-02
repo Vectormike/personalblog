@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import { useSiteMetadata } from "../use-site-metadata"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -19,12 +19,10 @@ const Layout = ({ children }) => {
   const { title, author} = useSiteMetadata();
 
   return (
-      <div>
+      <div className={LayoutStyles.container}>
         <Header siteTitle={title} />
-        <div className={LayoutStyles.container}>
-          <main>{children}</main>
-          <Footer siteAuthor={author}/>
-        </div>
+        <main>{children}</main>
+        <Footer siteAuthor={author}/>
       </div>
     ) 
   }
