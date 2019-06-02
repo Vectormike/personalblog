@@ -7,7 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+
+import { useSiteMetadata } from "../use-site-metadata"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -15,35 +16,18 @@ import Footer from "./footer"
 import LayoutStyles from '../styles/layout.module.scss';
 
 const Layout = ({ children }) => {
-  const title = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  const { title, author} = useSiteMetadata();
 
-  const author = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          author
-        }
-      }
-    }
-  `);
+  return (
       <div>
-        <Header siteTitle={title.site.siteMetadata.title} />
+        <Header siteTitle={title} />
         <div className={LayoutStyles.container}>
           <main>{children}</main>
-          <Footer siteAuthor={author.site.siteMetadata.author}/>
+          <Footer siteAuthor={author}/>
         </div>
       </div>
-    
-
-};
+    ) 
+  }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
