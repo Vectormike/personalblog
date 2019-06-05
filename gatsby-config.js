@@ -13,7 +13,7 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       }
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -29,7 +29,7 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-sharp`,
+
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,

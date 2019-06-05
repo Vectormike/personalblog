@@ -4,6 +4,7 @@ description: This post is related to the gatsbyjs
 date: '2018-09-26'
 image: 'images/Happy.gif'
 ---
+![grass](./Happy.png)
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

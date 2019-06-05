@@ -1,10 +1,9 @@
 ---
 title: "First Blog Post"
 date: "2019-06-02"
-
 ---
 
-![Grass](./Happy.gif)
+![Happy](./Happy.png)
 
 ## Welcome to my Blog
 
