@@ -1,5 +1,6 @@
  import React from 'react';
  import Layout from '../components/layout';
+ import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 
  const BlogPost = ({data}) => {
@@ -11,6 +12,7 @@ import { graphql } from 'gatsby';
             <Layout>
                 <div>
                     <h1>{title}</h1>
+                    <Img fluid={post.frontmatter.image}/>
                     <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 </div>
             </Layout>
@@ -21,13 +23,16 @@ import { graphql } from 'gatsby';
  export default BlogPost;
 
  export const query = graphql`
-    query PostQuery($slug: String!) {
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            html
-            frontmatter {
-             title
-
-            }
-        }  
+ query PostQuery($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+       title
+       image 
+        
+     
+         
     }
- `
+  }
+}
+`
