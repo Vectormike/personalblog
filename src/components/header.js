@@ -5,16 +5,13 @@ import HeaderStyles from '../styles/header.module.scss';
 
 const Header = ({ siteTitle }) => (
   <header className={HeaderStyles.header}>
-    <div>
       <h1>
         <Link
-          className={HeaderStyles.title}
           to="/"
           >
           {siteTitle}
         </Link>
       </h1>
-    </div>
   </header>
 )
 
