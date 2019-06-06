@@ -1,0 +1,63 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f8e842;
+  }
+
+.posts {
+    padding: 1rem;
+    margin-top: 3rem;
+    border-radius: 20px;
+    background-color: #91ab58;
+    
+    
+    a {
+        color: #4c4537;
+        text-decoration: none;
+        display: block;
+        -webkit-text-decoration-skip: objects;
+    }
+
+    a:hover {
+        color: #181511;
+    }
+
+    small {
+        font-size: 80%;
+    }
+
+    h3 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: 0.5rem;
+        color: inherit;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-weight: bold;
+        text-rendering: optimizeLegibility;
+        font-size: 1.38316rem;
+        line-height: 1.1;
+      }
+
+      p {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: 1.45rem;
+      }
+}

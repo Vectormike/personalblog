@@ -3,6 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {graphql, useStaticQuery, Link} from 'gatsby';
+import BlogStyles from '../styles/blog.module.scss';
+
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -32,21 +34,16 @@ const IndexPage = () => {
     <SEO title="Home" />
       {posts.map((edges) => {
         return (
-          <div>
-          <h3>
+          <div className={BlogStyles.posts}>
             <Link to={edges.node.fields.slug}>
-            {edges.node.frontmatter.title}
-            </Link>
-          </h3>
-          <small>
-            {edges.node.frontmatter.date} . {edges.node.timeToRead} min read
-          </small>
-          <p>
-            {edges.node.excerpt}
-          </p>
+              <h3>{edges.node.frontmatter.title}</h3>
+            </Link>  
+              <small>
+                {edges.node.frontmatter.date} . {edges.node.timeToRead} min read
+              </small>
+              <p>{edges.node.excerpt}</p>
         </div>
         )
-
       })}      
   
   </Layout>
