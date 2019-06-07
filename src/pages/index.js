@@ -39,7 +39,7 @@ const IndexPage = () => {
               <h3>{edges.node.frontmatter.title}</h3>
             </Link>  
               <small>
-                {edges.node.frontmatter.date} . {edges.node.timeToRead} min read
+                {edges.node.frontmatter.date} • {edges.node.timeToRead} min read
               </small>
               <p>{edges.node.excerpt}</p>
         </div>
