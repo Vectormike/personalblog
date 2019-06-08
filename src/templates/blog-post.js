@@ -30,19 +30,19 @@ import {
                 }>
                   <FacebookShareButton
                      title={title}
-                     url={`localhost:8000/${slug}`}
+                     url={`https://heuristic-poitras-bf2cbd.netlify.com//${slug}`}
                   >   
                      <FacebookIcon size={40} round={true}/>
                   </FacebookShareButton>
                   <TwitterShareButton
                      title={title}
-                     url={`localhost:8000/${slug}`}
+                     url={`https://heuristic-poitras-bf2cbd.netlify.com//${slug}`}
                   >   
                      <TwitterIcon size={40} round={true}/>
                   </TwitterShareButton> 
                   <WhatsappShareButton
                      title={title}
-                     url={`localhost:8000/${slug}`}
+                     url={`https://heuristic-poitras-bf2cbd.netlify.com//${slug}`}
                   >   
                      <WhatsappIcon size={40} round={true}/>
                   </WhatsappShareButton>
