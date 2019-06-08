@@ -6,13 +6,10 @@ import BlogPostStyles from '../styles/blog-post.module.scss';
 
 import {
    FacebookShareButton,
-   LinkedinShareButton,
    TwitterShareButton,
-   TelegramShareButton,
    WhatsappShareButton,
    FacebookIcon,
    TwitterIcon,
-   TelegramIcon,
    WhatsappIcon
 } from 'react-share';   
 
@@ -24,16 +21,31 @@ import {
     return (
             <Layout>
                 <SEO title={title}/>
+                
                 <h1 className={BlogPostStyles.header}>{title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-                <div>
+                <div style={
+                  {display: 'flex'}
+                }>
                   <FacebookShareButton
                      title={title}
                      url={`localhost:8000/${slug}`}
                   >   
                      <FacebookIcon size={40} round={true}/>
                   </FacebookShareButton>
+                  <TwitterShareButton
+                     title={title}
+                     url={`localhost:8000/${slug}`}
+                  >   
+                     <TwitterIcon size={40} round={true}/>
+                  </TwitterShareButton> 
+                  <WhatsappShareButton
+                     title={title}
+                     url={`localhost:8000/${slug}`}
+                  >   
+                     <WhatsappIcon size={40} round={true}/>
+                  </WhatsappShareButton>
                 </div>
             </Layout>
     
