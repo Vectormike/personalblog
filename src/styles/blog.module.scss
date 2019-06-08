@@ -1,9 +1,43 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+ 
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #80c7fa;
+}
+  
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121616; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(133, 245, 85); 
+  border-radius: 5px;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(104, 96, 96); 
+  width: 20px;
+}
 .posts {
     padding: 1rem;
     margin-top: 3rem;
     border-radius: 20px;
-    background-color: #ebebe6;
+    background-color: #addcfd;
 
     
     
