@@ -4,7 +4,7 @@ description:
 date: "2019-06-02"
 ---
 
-![Happy Dog](computer.jpeg)
+![Happy Dog](images/computer.jpeg)
 
 Hey! Great you are here, I really need to talk about something right now which is this whole idea of having a degree. I mean, a degree in Computer science major. But, I couldn’t. So I had to write..
 
@@ -14,7 +14,7 @@ ___
 
 ## What is this Computer Science though?
 
-![Trying to eat garbage](science.jpeg)
+![Trying to eat garbage](images/science.jpeg)
 
 According to Jarvis Johnson, an Engineering Manager at Patreon, he says Computer science is like a scientist doing a research, more often like in academia or more like a research function.
 
@@ -68,7 +68,7 @@ According to
 
 The truth behind Bindstock is that there is a learning path that determines if the supposed person is gainfully skilled and can deliver, I mean solve problems pre-defined to Computer Science.
 
-![Bored yet?](bored.jpeg)
+![Bored yet?](images/bored.jpeg)
 
 I observed that computer science graduates come into the industry only to realize that the academia is actually different from the application.
 
@@ -77,14 +77,14 @@ Look at this critical question. More deep roles like Software Architects which a
 These degrees are just tradition. It is part of an established process and are there to prove that you completed such process and is considered acceptable performance. It doesn’t prove anything. If you think getting a degree and having to be self-taught should make you stronger, then follow it. And if you think being just self-taught is okay, follow it. We all have our different races.
 
 
-![Graduate](graduate.png)
+![Graduate](images/graduate.png)
 
 An employer in a big tech company once said: if we ever get to meet a Computer Science BS graduate with experience and a Computer Science MS graduate with no experience, we do pick the BS graduate with experience and offer to pay his MS fee if he decides to further. Which makes gives more experience under his belt as years run by and a bigger top role in the company.
 
 ___
 
 
-![Drops mic](drops-mic.jpeg)
+![Drops mic](images/drops-mic.jpeg)
 
 
 
