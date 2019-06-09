@@ -5,6 +5,14 @@ module.exports = {
     author: `Victor Jonah`,
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-prismjs`,
+        ]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -38,7 +46,7 @@ module.exports = {
         short_name: `Vectormike`,
         start_url: `/`,
         background_color: `#000`,
-        theme_color: `#663399`,
+        theme_color: `#f19951`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
