@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
   
   /* width */
 ::-webkit-scrollbar {
@@ -23,10 +23,12 @@
   background: #ce4767; 
   width: 20px;
 }
+
+
 .posts {
     padding: 1rem;
     margin-top: 3rem;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #b0afb7;
 
     
@@ -36,14 +38,19 @@
         text-decoration: none;
         display: block;
         -webkit-text-decoration-skip: objects;
+        -moz-osx-font-smoothing: grayscale;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transition: transform 0.25s ease-in;
     }
 
-    a:hover {
+    a:hover, :focus {
         color: #181511;
+        transform: scale(1.02);
     }
 
     small {
-        font-size: 90%;
+        font-size: 70%;
     }
 
     h3 {
@@ -57,7 +64,8 @@
         margin-bottom: 0.5rem;
         font-family:'Bree Serif', serif;
         text-rendering: optimizeLegibility;
-        font-size: 2.0rem;
+        font-size: 1.5rem;
+        font-weight: bolder;
       }
 
       p {
@@ -68,8 +76,9 @@
         padding-left: 0;
         padding-right: 0;
         padding-top: 0;
-        font-size: 0.9rem;
+        font-size: 13px;
+        font-weight: 500;
         margin-bottom: 1.45rem;
-        font-family: 'Fredoka One', cursive;
+        font-family: 'Open Sans Condensed', cursive;
       }
 }
