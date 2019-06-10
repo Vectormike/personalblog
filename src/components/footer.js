@@ -7,11 +7,11 @@ const Footer = ({siteAuthor}) => {
   return (
     <div className={footerStyles.footer}>
       <p>Built by {siteAuthor} © {new Date().getFullYear()}</p>
-      <p>
-        <Link>Twitter</Link>
-        <Link>Github</Link>
-        <Link>Facebook</Link>
-      </p>
+      <ul className={footerStyles.lists}>
+        <li><a href="https://twitter.com/Vectormike_">Twitter</a></li>  •
+        <li><a href="https://github.com/Vectormike40">Github</a></li>  •
+        <li><a href="https://www.facebook.com/victor.jonah">Facebook</a></li>
+      </ul>
     </div>
   )
 }
