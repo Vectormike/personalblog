@@ -1,25 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Fredoka+One|Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Alfa+Slab+One|Fredoka+One|Neucha&display=swap');
 
 .header {
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    padding: 1rem;
     text-decoration: none; 
     max-width: 750px;
-    color: rgb(32, 32, 32);
+    margin-left: 0;
+    text-decoration: none;
+    margin-right: 0;
+    color: rgb(7, 7, 7);
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+    margin-bottom: 4rem;
+    font-family:'Alfa Slab One', serif;
+    font-size: 3rem;
 
-    h1 {
-        margin-left: 0;
-        text-decoration: none;
-        margin-right: 0;
-        margin-top: 0;
-        padding-bottom: 0;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 2rem;
-        margin-bottom: 1.45rem;
-        font-family:'Bree Serif', serif;
-        font-size: 3.50rem;
-      }
 }
 
