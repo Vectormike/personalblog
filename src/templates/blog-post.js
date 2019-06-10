@@ -25,28 +25,52 @@ import {
                 <h1 className={BlogPostStyles.header}>{title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-                <div style={
-                  {display: 'flex'}
-                }>
-                  <FacebookShareButton
-                     title={title}
-                     url={`https://heuristic-poitras-bf2cbd.netlify.com//${slug}`}
-                  >   
-                     <FacebookIcon size={40} round={true}/>
-                  </FacebookShareButton>
-                  <TwitterShareButton
-                     title={title}
-                     url={`https://heuristic-poitras-bf2cbd.netlify.com//${slug}`}
-                  >   
-                     <TwitterIcon size={40} round={true}/>
-                  </TwitterShareButton> 
-                  <WhatsappShareButton
-                     title={title}
-                     url={`https://heuristic-poitras-bf2cbd.netlify.com//${slug}`}
-                  >   
-                     <WhatsappIcon size={40} round={true}/>
-                  </WhatsappShareButton>
-                </div>
+               <div>
+                  <div style={
+                     {float: 'left'}
+                  }>
+                     <ul style={
+                        {
+                           listStyle: 'none'                        
+                        }
+                     }>
+                        <li>
+                           <a style={
+                              {
+                                 textDecoration: 'none'
+
+                              }   
+                           } 
+                           href={`/https://twitter.com/search?q=https://heuristic-poitras-bf2cbd.netlify.com/${slug}`}>Discuss on Twitter</a></li>
+                     </ul>
+                  </div>
+                  <div style={
+                     {
+                        display: 'flex',
+                        float: 'right',
+                        marginLeft: '200px'
+                     }
+                  }>
+                     <FacebookShareButton
+                        title={title}
+                        url={`https://heuristic-poitras-bf2cbd.netlify.com/${slug}`}
+                     >   
+                        <FacebookIcon size={40} round={true}/>
+                     </FacebookShareButton>
+                     <TwitterShareButton
+                        title={title}
+                        url={`https://heuristic-poitras-bf2cbd.netlify.com/${slug}`}
+                     >   
+                        <TwitterIcon size={40} round={true}/>
+                     </TwitterShareButton> 
+                     <WhatsappShareButton
+                        title={title}
+                        url={`https://heuristic-poitras-bf2cbd.netlify.com/${slug}`}
+                     >   
+                        <WhatsappIcon size={40} round={true}/>
+                     </WhatsappShareButton>
+                  </div>
+                </div> 
             </Layout>
     
     )
