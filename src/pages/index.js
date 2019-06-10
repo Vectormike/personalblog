@@ -4,9 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {graphql, useStaticQuery, Link} from 'gatsby';
 import BlogStyles from '../styles/blog.module.scss';
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+
 
 
 const IndexPage = () => {
+
   const data = useStaticQuery(graphql`
   query {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }){
@@ -32,6 +35,10 @@ const IndexPage = () => {
   return (
   <Layout>
     <SEO title="Home" />
+      <div>
+        <img src=""/>
+        <p>Personal blog by <a href="https://twitter.com/Vectormike_">Victor Jonah</a> </p>
+      </div>
       {posts.map((edges) => {
         return (
           <div className={BlogStyles.posts}>

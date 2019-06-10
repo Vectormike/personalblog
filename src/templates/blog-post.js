@@ -27,7 +27,10 @@ import {
 
                <div>
                   <div style={
-                     {float: 'left'}
+                     {
+                        float: 'left',
+                        marginRight: '200px'
+                     }
                   }>
                      <ul style={
                         {
