@@ -4,15 +4,13 @@ import React from "react";
 import HeaderStyles from '../styles/header.module.scss';
 
 const Header = ({ siteTitle }) => (
-  <header className={HeaderStyles.header}>
-      <h1>
-        <Link
-          to="/"
-          >
-          {siteTitle}
-        </Link>
-      </h1>
-  </header>
+  <Link className={HeaderStyles.header}
+    to="/"
+    >
+    <header className={HeaderStyles.header}>
+      {siteTitle}
+    </header>
+  </Link>
 )
 
 Header.propTypes = {
