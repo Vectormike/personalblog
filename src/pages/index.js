@@ -35,8 +35,20 @@ const IndexPage = () => {
   return (
   <Layout>
     <SEO title="Home" />
-      <div>
-        <img src=""/>
+      <div style={
+        {
+          display: 'flex'
+        }
+      }>
+        <img style={
+          {
+            height: '100px',
+            width: '100px',
+            borderRadius: '19px',
+            paddingRight: '20px'
+          }
+        } src="https://res.cloudinary.com/vectormike/image/upload/v1554552347/6edfcea6-0523-4be3-9d0e-ea49fc1248d5.png"/>
+        
         <p>Personal blog by <a href="https://twitter.com/Vectormike_">Victor Jonah</a> </p>
       </div>
       {posts.map((edges) => {
