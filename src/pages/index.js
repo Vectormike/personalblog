@@ -49,7 +49,11 @@ const IndexPage = () => {
           }
         } src="https://res.cloudinary.com/vectormike/image/upload/v1554552347/6edfcea6-0523-4be3-9d0e-ea49fc1248d5.png"/>
         
-        <p>Personal blog by <a href="https://twitter.com/Vectormike_">Victor Jonah</a></p>
+        <p>Personal blog by <a style={
+          {
+            color: 'rgb(23, 131, 226)'
+          }
+        } href="https://twitter.com/Vectormike_">Victor Jonah</a></p>
       </div>
       {posts.map((edges) => {
         return (
