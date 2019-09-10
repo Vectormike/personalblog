@@ -10,16 +10,17 @@
     display: flex;
     margin: -10px;
     padding: 0;
-    
+    text-align: center;
 
     li {
         padding: 0;
         margin-right: 7px;
         margin-left: 7px;
 
+
         a {
             text-decoration: none;
-            color: rgb(59, 93, 161);
+            color: rgb(23, 131, 226);
             transition: ease-in;
         }
 
