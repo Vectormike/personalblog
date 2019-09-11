@@ -1,8 +1,11 @@
 .footer {
     padding: 0;
     font-family: 'Neucha', cursive;
-    font-size: 20px;
     margin-top: 200px;
+
+    p{
+        font-size: 15px;
+    }
 }
 
 .lists {
@@ -11,6 +14,7 @@
     margin: -10px;
     padding: 0;
     text-align: center;
+    font-size: 25px;
 
     li {
         padding: 0;
@@ -20,12 +24,12 @@
 
         a {
             text-decoration: none;
-            color: rgb(23, 131, 226);
+            color: rgb(10, 10, 10);
             transition: ease-in;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: rgb(63, 66, 245);
             transition: 2s;
         }
     }

@@ -44,7 +44,7 @@ import {
 
                               }   
                            } 
-                           href={`/https://twitter.com/search?q=https://heuristic-poitras-bf2cbd.netlify.com/${slug}`}>Discuss on Twitter</a></li>
+                           href={`/https://twitter.com/search?q=http://www.vectormike.codes/${slug}`}>Discuss on Twitter</a></li>
                      </ul>
                   </div>
                   <div style={
@@ -56,19 +56,19 @@ import {
                   }>
                      <FacebookShareButton
                         title={title}
-                        url={`https://heuristic-poitras-bf2cbd.netlify.com/${slug}`}
+                        url={`http://www.vectormike.codes/${slug}`}
                      >   
                         <FacebookIcon size={40} round={true}/>
                      </FacebookShareButton>
                      <TwitterShareButton
                         title={title}
-                        url={`https://heuristic-poitras-bf2cbd.netlify.com/${slug}`}
+                        url={`http://www.vectormike.codes/${slug}`}
                      >   
                         <TwitterIcon size={40} round={true}/>
                      </TwitterShareButton> 
                      <WhatsappShareButton
                         title={title}
-                        url={`https://heuristic-poitras-bf2cbd.netlify.com/${slug}`}
+                        url={`http://www.vectormike.codes/${slug}`}
                      >   
                         <WhatsappIcon size={40} round={true}/>
                      </WhatsappShareButton>
