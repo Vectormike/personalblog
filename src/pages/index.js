@@ -49,7 +49,7 @@ const IndexPage = () => {
         />
 
         <p>
-          Personal blog by{" "}
+          Topics-Articles on Sofware Engineering written by{" "}
           <a
             style={{
               color: "rgb(23, 131, 226)",

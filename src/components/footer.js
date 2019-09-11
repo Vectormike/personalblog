@@ -11,17 +11,17 @@ const Footer = ({ siteAuthor }) => {
       <ul className={footerStyles.lists}>
         <li>
           <Link href="https://twitter.com/Vectormike_">
-            <i className="fab fa-twitter"/>
+            Twitter
           </Link>
         </li>
         <li>
           <Link href="https://github.com/Vectormike40">
-            <i className="fab fa-github" />
+            Github
           </Link>
         </li>
         <li>
-          <Link href="https://www.facebook.com/victor.jonah">
-            <i className="fab fa-facebook" />
+          <Link href="https://www.linkedin.com/in/victor-jonah-abb1a1120/">
+            LinkedIn
           </Link>
         </li>
       </ul>
