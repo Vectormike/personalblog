@@ -21,7 +21,7 @@ const Footer = ({ siteAuthor }) => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/Vectormike40"
+            href="https://github.com/Vectormike"
           >
             Github
           </a>
