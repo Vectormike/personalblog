@@ -10,17 +10,29 @@ const Footer = ({ siteAuthor }) => {
       </p>
       <ul className={footerStyles.lists}>
         <li>
-          <a href="https://twitter.com/Vectormike_">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/Vectormike_"
+          >
             Twitter
           </a>
         </li>
         <li>
-          <a href="https://github.com/Vectormike40">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Vectormike40"
+          >
             Github
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/victor-jonah-abb1a1120/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/victor-jonah-abb1a1120/"
+          >
             LinkedIn
           </a>
         </li>
