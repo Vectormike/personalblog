@@ -42,9 +42,11 @@ const BlogPost = ({ data }) => {
                 style={{
                   textDecoration: "none",
                 }}
-                href={`/https://twitter.com/search?q=https://www.vectormike.codes/${slug}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`https://twitter.com/search?q=Vectormike_${slug}`}
               >
-                Discuss on Twitter
+                Discuss with me on Twitter
               </a>
             </li>
           </ul>
@@ -58,18 +60,21 @@ const BlogPost = ({ data }) => {
         >
           <FacebookShareButton
             title={title}
+            style={{ padding: `0 0.3rem` }}
             url={`https://www.vectormike.codes/${slug}`}
           >
             <FacebookIcon size={40} round={true} />
           </FacebookShareButton>
           <TwitterShareButton
             title={title}
+            style={{ padding: `0 0.3rem` }}
             url={`https://www.vectormike.codes/${slug}`}
           >
             <TwitterIcon size={40} round={true} />
           </TwitterShareButton>
           <WhatsappShareButton
             title={title}
+            style={{ padding: `0 0.3rem` }}
             url={`https://www.vectormike.codes/${slug}`}
           >
             <WhatsappIcon size={40} round={true} />
