@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import footerStyles from "../styles/footer.module.scss"
 
 const Footer = ({ siteAuthor }) => {
