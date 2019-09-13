@@ -24,7 +24,7 @@ const BlogPost = ({ data }) => {
   const disqusConfig = {
     identifier: data.markdownRemark.id, // you can define anything as "identifier" for each blog post
     title: data.markdownRemark.frontmatter.title,
-    url: "https://vectormike.codes" + data.markdownRemark.frontmatter.path,
+    url: "https://vectormike.codes" + data.markdownRemark.fields.slug,
   }
 
   return (
@@ -109,7 +109,7 @@ export const query = graphql`
       }
       frontmatter {
         title
-        path
+        
       }
     }
   }
