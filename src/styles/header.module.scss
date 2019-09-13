@@ -6,7 +6,7 @@
     margin-left: 0;
     text-decoration: none;
     margin-right: 0;
-    color: rgb(23, 131, 226);
+    color: rgb(1, 13, 24);
     margin-top: 0;
     padding-bottom: 0;
     padding-left: 0;
@@ -14,7 +14,13 @@
     padding-top: 1rem;
     margin-bottom: 4rem;
     font-family:'Alfa Slab One', serif;
-    font-size: 3rem;
+    font-size: 2rem;
+
+    header:hover, :focus {
+        color: rgb(23, 131, 226);
+        transform: scale(1.01);
+    }
+
 
 }
 
