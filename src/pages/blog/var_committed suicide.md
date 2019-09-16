@@ -1,5 +1,5 @@
 ---
-title: "The var keyword is dead?"
+title: "Is var dead in JavaScript?"
 description: What really happened to the var keyword in JavaScript
 date: "2019-09-16"
 ---
