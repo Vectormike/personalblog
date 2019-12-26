@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import { DiscussionEmbed } from "disqus-react"
 import SEO from "../components/seo"
 import BlogPostStyles from "../styles/blog-post.module.scss"
 
@@ -17,6 +18,14 @@ const BlogPost = ({ data }) => {
   const post = data.markdownRemark
   const { title } = post.frontmatter
   const { slug } = post.fields
+
+  // disqus configuration
+  const disqusShortName = "vectormike-codes"
+  const disqusConfig = {
+    identifier: data.markdownRemark.id, // you can define anything as "identifier" for each blog post
+    title: data.markdownRemark.frontmatter.title,
+    url: "https://vectormike.codes" + data.markdownRemark.fields.slug,
+  }
 
   return (
     <Layout>
@@ -81,6 +90,9 @@ const BlogPost = ({ data }) => {
           </WhatsappShareButton>
         </div>
       </div>
+      <div>
+        <DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
+      </div>
     </Layout>
   )
 }
@@ -91,11 +103,13 @@ export const query = graphql`
   query PostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      id
       fields {
         slug
       }
       frontmatter {
         title
+        
       }
     }
   }

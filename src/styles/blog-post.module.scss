@@ -7,7 +7,7 @@
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.45rem;
-    color: #3a3949;
+    color: rgb(23, 131, 226);
     font-family: 'Bree Serif', serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
@@ -18,5 +18,11 @@ html {
     font-family: 'Inconsolata', monospace;
     text-rendering: optimizeLegibility;
     font-size: 1rem;
-    font-weight: 100
+    font-weight: 100;
+
+    a {
+        color:rgb(23, 131, 226);
+        font-size: 16px;
+        font-weight: 100;
+    }
 }

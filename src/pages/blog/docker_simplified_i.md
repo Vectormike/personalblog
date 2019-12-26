@@ -10,8 +10,13 @@ In this article, we will be looking at **Docker Simplified** I:
 
 
 + Introduction. 
+<<<<<<< HEAD
 + What the hell is Docker?  
 + Why Docker?    
+=======
++ What the hell is Docker?
++ Why Docker. 
+>>>>>>> 5ae30add68bd5eb7f5b670547fb1b558272fca06
 + Docker Components. 
 + Docker Tools.  
 
@@ -76,7 +81,11 @@ For resources on Docker
 
 
 
+<<<<<<< HEAD
 ## Why Docker?
+=======
+## Why Docker
+>>>>>>> 5ae30add68bd5eb7f5b670547fb1b558272fca06
 
 ![Docker](images/why.jpeg)
 
