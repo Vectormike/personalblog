@@ -13,7 +13,7 @@ In this article, we will be looking at **Docker Simplified** I:
 + What the hell is Docker. 
 + Why Docker. 
 + Docker Components. 
-+ Docker Tools, 
++ Docker Tools.  
 
 
 
