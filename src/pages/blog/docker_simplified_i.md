@@ -10,10 +10,10 @@ In this article, we will be looking at **Docker Simplified** I:
 
 
 + Introduction. 
-+ What the hell is Docker. 
++ What the hell is Docker?
 + Why Docker. 
 + Docker Components. 
-+ Docker Tools, 
++ Docker Tools.  
 
 
 
