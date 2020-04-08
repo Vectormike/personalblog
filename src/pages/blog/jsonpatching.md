@@ -6,7 +6,7 @@ date: "2020-04-08"
 
 ![Remember me?](images/hi2.jpeg)
 
-Have you heard about JSON Patch
+Have you heard about JSON Patch?
 
 ![thinking](images/thinking.png)
 
